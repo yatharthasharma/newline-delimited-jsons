@@ -1,0 +1,11 @@
+{
+  "name": "newline-delimited-jsons",
+  "version": "1.0.0",
+  "description": "Read Newline Delimited JSON (by parsing to normal JSON), modify data, convert (using JQ JSON Processor) back to Newline Delimited JSON.",
+  "main": "jsonSanitiser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node jsonSanitiser.js && cat output.json | jq -c \".[]\" > sanitisedJson.json"
+  },
+  "author": "Yathartha Sharma"
+}
